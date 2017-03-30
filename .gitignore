@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+# Clion IDE cache files
+.idea/
+
