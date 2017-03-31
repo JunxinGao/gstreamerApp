@@ -30,4 +30,6 @@
 
 # Clion IDE cache files
 .idea/
+cmake-build-debug/
+build/
 
