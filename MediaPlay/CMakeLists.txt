@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.6)
 project(mediaPlay)
 
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "-fpermissive ${CMAKE_CXX_FLAGS}")
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/)
 
 find_package(GStreamer)
