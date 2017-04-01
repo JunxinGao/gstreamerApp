@@ -17,7 +17,7 @@ main (int argc, char **argv)
     gst_init (&argc, &argv);
 
     pipe = gst_parse_launch_full ("videotestsrc ! capsfilter name=filter ! "
-                                          "autoimagesink", NULL, GST_PARSE_FLAG_NONE, NULL);
+                                          "glimagesink", NULL, GST_PARSE_FLAG_NONE, NULL);
     g_assert (pipe != NULL);
 
     filter = gst_bin_get_by_name (GST_BIN (pipe), "filter");

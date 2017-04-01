@@ -183,7 +183,7 @@ main (int argc, char **argv)
                              "video/x-raw, width=320, height=240, "
                                      "format={ RGBx, BGRx, xRGB, xBGR, RGBA, BGRA, ARGB, ABGR, RGB, BGR }");
 
-    sink = gst_element_factory_make ("autoimagesink", NULL);
+    sink = gst_element_factory_make ("glimagesink", NULL);
 
     gst_bin_add_many (GST_BIN (pipeline), src, filter1, q1, conv_before, effect,
                       conv_after, q2, sink, NULL);

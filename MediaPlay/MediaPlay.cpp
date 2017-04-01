@@ -146,9 +146,9 @@ main (gint   argc,
     if (csp == NULL)
         g_error ("Could not create 'videoscale' element");
 
-    sink = gst_element_factory_make ("autovideosink", "sink");
+    sink = gst_element_factory_make ("glvideosink", "sink");
     if (sink == NULL)
-        g_error ("Could not create 'autovideosink' element");
+        g_error ("Could not create 'glvideosink' element");
 
     gst_bin_add_many (GST_BIN (pipeline), src, csp, vs, sink, NULL);
 

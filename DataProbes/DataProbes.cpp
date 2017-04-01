@@ -66,11 +66,11 @@ main (gint   argc,
     if (csp == NULL)
         g_error ("Could not create 'videoconvert' element");
 
-    sink = gst_element_factory_make ("xvimagesink", "sink");
+    sink = gst_element_factory_make ("glimagesink", "sink");
     if (sink == NULL) {
         sink = gst_element_factory_make ("ximagesink", "sink");
         if (sink == NULL)
-            sink = gst_element_factory_make ("glimagesink", "sink");
+            sink = gst_element_factory_make ("xvimagesink", "sink");
         if (sink == NULL)
             g_error ("Could not create neither 'xvimagesink' nor 'ximagesink' nor 'glimagesink' element");
     }
