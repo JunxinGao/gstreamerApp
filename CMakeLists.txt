@@ -3,3 +3,4 @@ project(gstreamerApp)
 
 set(CMAKE_CXX_STANDARD 11)
 add_subdirectory(DataProbes)
+add_subdirectory(MediaPlay)
